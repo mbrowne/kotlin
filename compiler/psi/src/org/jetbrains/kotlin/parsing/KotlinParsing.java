@@ -1340,6 +1340,12 @@ public class KotlinParsing extends AbstractKotlinParsing {
             parseSecondaryConstructor();
             declType = SECONDARY_CONSTRUCTOR;
         }
+        // dci
+        else if (at(ROLE_KEYWORD)) {
+            // TODO
+            // parseRole();
+            declType = ROLE;
+        }
         else if (at(LBRACE)) {
             error("Expecting member declaration");
             parseBlock();

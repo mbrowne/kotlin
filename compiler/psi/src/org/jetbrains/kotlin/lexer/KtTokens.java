@@ -175,6 +175,9 @@ public interface KtTokens {
     int ACTUAL_KEYWORD_Id = 146;
     int INTERPOLATION_PREFIX_Id = 147;
 
+    // dci
+    int ROLE_KEYWORD_Id = 1000;
+
     KtToken EOF   = new KtToken("EOF", EOF_Id);
 
     KtToken RESERVED    = new KtToken("RESERVED", RESERVED_Id);
@@ -228,6 +231,9 @@ public interface KtTokens {
     KtKeywordToken DO_KEYWORD               = KtKeywordToken.keyword("do", DO_KEYWORD_Id);
     KtKeywordToken WHEN_KEYWORD             = KtKeywordToken.keyword("when", WHEN_KEYWORD_Id);
     KtKeywordToken INTERFACE_KEYWORD        = KtKeywordToken.keyword("interface", INTERFACE_KEYWORD_Id);
+
+    // dci
+    KtKeywordToken ROLE_KEYWORD            = KtKeywordToken.keyword("class", ROLE_KEYWORD_Id);
 
     // Reserved for future use:
     KtKeywordToken TYPEOF_KEYWORD           = KtKeywordToken.keyword("typeof", TYPEOF_KEYWORD_Id);
@@ -370,7 +376,9 @@ public interface KtTokens {
                                              DATA_KEYWORD, INLINE_KEYWORD, NOINLINE_KEYWORD, TAILREC_KEYWORD, EXTERNAL_KEYWORD,
                                              ANNOTATION_KEYWORD, CROSSINLINE_KEYWORD, CONST_KEYWORD, OPERATOR_KEYWORD, INFIX_KEYWORD,
                                              SUSPEND_KEYWORD, EXPECT_KEYWORD, ACTUAL_KEYWORD,
-                                             VALUE_KEYWORD, CONTEXT_KEYWORD
+                                             VALUE_KEYWORD, CONTEXT_KEYWORD,
+                                             // dci
+                                             ROLE_KEYWORD
     );
 
     /*

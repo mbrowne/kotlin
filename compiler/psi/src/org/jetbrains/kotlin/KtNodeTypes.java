@@ -34,6 +34,9 @@ public interface KtNodeTypes {
     IElementType OBJECT_DECLARATION = KtStubElementTypes.OBJECT_DECLARATION;
     IElementType TYPEALIAS = KtStubElementTypes.TYPEALIAS;
 
+    // dci
+    IElementType ROLE = KtStubElementTypes.ROLE;
+
     IElementType ENUM_ENTRY             = KtStubElementTypes.ENUM_ENTRY;
     IElementType CLASS_INITIALIZER      = KtStubElementTypes.CLASS_INITIALIZER;
     IElementType SCRIPT_INITIALIZER     = new KtNodeType("SCRIPT_INITIALIZER", KtScriptInitializer.class);
